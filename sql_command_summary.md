@@ -15,6 +15,7 @@
     
 - from 옵션
     - right join , left join
+    
 - where 옵션
     - like, not like
     - is null, is not null
