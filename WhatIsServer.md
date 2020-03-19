@@ -6,14 +6,12 @@
     - window: 점유율 2위의 MS사 os. 윈도우 닷넷 기반 프로그램의 연계와 구동 가능성이 뛰어나다. MS사의 지원으로 인해 기업용 서버로 많이 이용된다.
     - solaris: Unix를 기반하는 서버 중 하나이다. 인수한 오라클이 현재 지원과 개발을 맡고있다.
 - 서버 종류 
-    - FTP 서버: 대용량 파일 전송을 위한 프로토콜
+    - FTP 서버: 대용량 파일 전송을 위한 **프로토콜**
     - 웹 서버: 웹 서비스 제공하기 위한 서버. 대표적으로 아파치 서버가 있다.
     - 데이터베이스 서버: 거대한 양의 데이터를 저장하고 관리하는 데이터베이스를 구동하는 서버
         - 대표적으로 MySQL서버, Oracle DB 서버, MS Sql 서버
-        
 
 ### 웹서버
-
 - 종류
     - Apache web server(the Http web server): 가장 유명하고 널리 쓰이는 웹 서버. 프리 오픈소스 소프트웨어로 os 대부분에서 사용이 가능하다.
     - Apache Tomcat: servlet, jsp를 지원하도록 개발되었다. 모듈 아키텍처를 이용해 각 인프라 부분들의 상이한 요구를 만족시킨다. 단독적으로 서버 이용이 가능하나 보통 Apache http 웹서버나 다른 웹서버와 함께 사용되고 있다. 다양한 os에서 사용 가능하다.
@@ -21,13 +19,13 @@
     - NginX Http server: 비동기 이벤트 주도 아키텍처로 좋은 성능과 효율을 자랑한다. 확장성, 헤비유저 부하량을 처리하는데 최소한의 자원을 이용한다. 트래픽이 많은 사이트에서 가장 많이 채택한 엔진이다.
     - Lighttpd: 라이티라고 부르는 고성능의 속도 환경에 맞춰 최적화된 경량 웹 서버이다. 무슨 언어의 웹앱이든 전부 지원한다. 메모리 풋프린트(memory footprint), cpu부하가 비교적 적고 여러 고급 기능을 갖추고 있다. 
     - 그외: Jigsaw, Klone, Abyss, Monkey http 등    
+- WAS란, Web Application Server를 의미함. HTTP 통해 앱을 수행시키는 미들웨어이다. Web app을 수행할 수 있는 환경을 제공해주는 서버이다.
+- WAS <<< 서버. 서버 한대에 WAS를 여러개 둘 수도 있다고 한다.
 
 **용어 정리**
 - CLI: Command Line Interface 명령줄 인터페이스. 
 - 윈도우 닷넷: 닷넷 프레임워크를 말한다. 
 ms에서 개발한 윈도우 프로그램 개발 및 실행 환경이다. 오픈소스 버전으로 닷넷 코어가 있다.
-
-
 
 ## 취업시장 server 부문 동향
 
@@ -38,12 +36,10 @@ ms에서 개발한 윈도우 프로그램 개발 및 실행 환경이다. 오픈
     - 인재상: 능동적 문제 찾고 해결, java python c/c++등 언어 활용 능력, 컴퓨터과학 기초지식(자료구조, 알고리즘,db, 네트워크, 운영체제) 이해, 리눅스 환경 내 개발/운영에 대한 이해
     - 우대: 개발 프레임워크 활용에 대한 이해나 경험, 데이터 분산처리 기술에 대한 이해나 경험(hadoop,hbase,kafka,redis,mongodb,elasticsearch,Cassandra 등), 오픈소스sw개발이나 커뮤 활동 경험
 
-
 - 라인 클라우드
     - 담당 업무: private cloud plattform Verda(베르다) 개발/운영, Hadoop 및 HBase Clust 구축/운영
     - 인재상 위와 동일 
     - 우대: Kubernetes, OpenStack, Ceph 등 cloud 관련 기술 이해 또는 경험, 데이터 분산처리 관련 기술 이해 또는 경험, 오픈소스sw개발이나 커뮤 활동 경험
-
 
 ### 이스트소프트
 - 단계: 서류 - 온라인코테 - 1차 인터뷰 - 인성검사,2차인터뷰 - 처우협상 - 최종합격
@@ -77,9 +73,50 @@ ms에서 개발한 윈도우 프로그램 개발 및 실행 환경이다. 오픈
     - 자격: 웹기술 전반 이해, java, spring 기반의 백앤드 개발 경험, jsp, Angular,vue 등 활용한 프론트엔드 개발 경험, ansi표준 sql 작성 경험
     - 우대: RESTFUL API에 대한 이해 및 오픈소스 라이브러리 활용에 대한 개방적 사고, git/github 등 협업툴로 동료와 협업 개발 경험, 대규모 트래픽을 위한 분산 시스템 설계/개발/운영 경험
 
+### D2 News에서 말하는 백엔드 개발자
+- 일의 범위
+    - 사용자에게 보이는 웹 앱 개발 뿐만 아니라 데이터분석을 위한 엔지니어링, 분산파일시스템이나 DBMS같은 제품 개발. 프론트보다 상대적으로 모호하다.
+    - 프로젝트에 따라 서버관리/DB관리/프론트엔드 개발까지 모두 담당하기도 한다. 분업화된 영역도 있음.
+    
+- 백앤드 특징
+    - 백엔드 개발자는 폭넓은 기술을 접하는 역할 수행. SE, FE와 소통할 일이 많다.
+    - 여러 분야와 연결되기에 무난하고 포용하는 분야가 많다. 이론과 실무경험이 잘 조화될 수 있다.
+    - RDB, TCP/IP, OS, 통계 등 바탕이 되는 지식들을 축적하여 준비하라. 
+
+- 개발 프레임워크의 트렌드
+    - JVM 생태계에서 계속 Spring/Netty 기반 프레임워크들이 꾸준히 발전할것으로 예측한다. 고부하 처리를 위한 서버에서는 Netty를 바탕으로 하고 ui개발과 직접 호출하는 API나 HTML까지 그리는 서버 개발은 Spring 계열이 많이 쓰인다.
+    - 비동기 I/ 활용하는 서버 개발이 최근 몇 년 동안 서버개발자들 사이에서 많은 관심을 끌고있다. JAVA를 이용하는 환경에서는 비동기 개발 자체가 갖는 진입장벽, 기술적 난이도가 있다. RDB를 호출하는 어플이 대부분이다. 최근에 나온 spring5에서 비동기 I/O 개발을 지원하는 Webflux 모듈도 주목받는다.
+    - 모든 서버가 비동기 개발이 되어야하는건 아니지만 트래픽이 많아 동기/스레드 기반으로는 자원을 효율적으로 쓸 수 없는 시스템에서는 택할만하다. 네이버에서도 고부하처리하는 플랫폼 서버는 Netty/Vert.x 위에서 비동기 방식으로 개발 된 것이 많다. 대용량 세션을 위한 로드밸런서도 그 예시이다.
 
 **용어 정리**
+- SE, FE : System Engineering, Front End
 - MFC: Microsoft Foundation Class Library
-- EDR: Endpoint Detection Response 엔드포인트 위협탐지및 대응
+- EDR: Endpoint Detection Response 엔드포인트 위협탐지 및 대응
 - CTI: Cyber Threat Intelligence
-- gcp: 
+- gcp: Google Cloud Plattform
+- ORM: Object-Relational Mapping
+- Netty: 서버 및 클라이언트같은 앱을 빠르고 쉽게 개발할 수 있게 해주는 NIO 프레임워크
+- NIO: NonBlocking Input-Output
+
+**직접 구현해볼만한 기술**
+- 아키텍처를 고려한 웹서버 선택
+- 동기식과 비동기식 프레임워크 
+    - Spring, Angular
+- Rest API 설계
+- Netty
+- 분산처리 기술 
+    - hadoop
+    - hbase
+    - kafka
+    - redis
+    - mongodb
+    - elasticsearch
+    - Cassandra 
+
+
+**읽을만한 기사**
+- [백엔드 개발자를 꿈꾸는 학생에게](https://d2.naver.com/news/3435170)
+- [그런 REST API로 괜찮은가](https://deview.kr/2017/schedule/212)
+- [Netty란?](https://sshinbdev.tistory.com/6)
+- [Hadoop과 Mongodb를 이용한 로그분석 시스템](https://d2.naver.com/helloworld/1016)
+- [인프라아키텍처 모델 종류](https://dabingk.tistory.com/23?category=839079)
