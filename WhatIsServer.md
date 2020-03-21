@@ -114,9 +114,10 @@ ms에서 개발한 윈도우 프로그램 개발 및 실행 환경이다. 오픈
     - Cassandra 
 
 
-**읽을만한 기사**
+**읽을만한 글**
 - [백엔드 개발자를 꿈꾸는 학생에게](https://d2.naver.com/news/3435170)
 - [그런 REST API로 괜찮은가](https://deview.kr/2017/schedule/212)
 - [Netty란?](https://sshinbdev.tistory.com/6)
 - [Hadoop과 Mongodb를 이용한 로그분석 시스템](https://d2.naver.com/helloworld/1016)
 - [인프라아키텍처 모델 종류](https://dabingk.tistory.com/23?category=839079)
+- [Kafka 경험](https://blog.voidmainvoid.net/category/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0/Kafka)
