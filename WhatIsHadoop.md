@@ -12,8 +12,30 @@
 3. Consistency(지속성): 시스템에서 작업이 수행되는 동안 시스템 컴포넌트에 문제가 생겨도 작업에는 영향을 주지 않습니다.
 4. Scalable(확장성): 저장할 용량이 늘어나면 컴퓨터 추가 
 
-### 하둡 구성 요소
-- 하둡 아키텍처 사진 삽입
+### 하둡 내부 구성 및 설명
+<img src="./imgs/HadoopEcoSystem.png" width=400px height=400px />
+하둡은 단일 서버에서 수천대의 머신으로 확장 할 수 있도록 설계되어 있습니다. <br>
+중앙 시스템(하둡)에 활용성을 높이기 위해 여러가지 소프트웨어를 추가한 모델을 '에코시스템'이라 부릅니다. <br>
+하둡 초기 모델은 HDFS, MapReduce를 포함한 프레임워크로 시작했으나 <br>
+데이터저장, 처리, 실행 엔진 등을 포함하는 생태계(EcoSystem) 의미로 확장되었습니다.
+
+- Distributed Coordinator: 분산처리, 분산환경 구성하는 서버 설정을 관리하는 시스템
+    - Zookeeper
+- Scheduling
+- Data Ingestion: 데이터 수집 역할
+    - Kafka: 데이터 스트림 실시간 관리하는 분산 시스템,대용량 이벤트처리 가능
+- Applications: 데이터 분산처리 작업에 관련된 앱을 포함한다.
+    - MapReduce: 대용량 데이터 처리 분산 프로그래밍 프레임워크
+    - Hive(하둡기반 데이터분석 솔루션)
+    - Spark(빠른 속도로 실행시켜주는 엔진)
+    - Pig(데이터를 스크립트로 처리)
+    - Impale(Map Reduce 대체하는 하둡기반 신속 분산엔진)
+- Storage: 분산 데이터를 저장하는 저장소이다.
+    - HDFS
+    - HBase(분산DB)
+    - Kudu(컬럼기반 스토리지)
+- 분산 리소스 관리
+    - Yarn: 작업 스케줄링 및 클러스터 리소스 관리 위한 프레임워크이다. MapReduce, Hive, Spark, Impale 등 앱은 얀에서 작업을 실행한다.
 
 ### 하둡 동작원리
 - MapReduce, HDFS 두 가지 요소가 하둡 동작의 핵심입니다.
@@ -24,7 +46,7 @@
 - 기존의 분산 처리 시스템에는 확장성, PF문제가 있습니다.
 - 구글의 연구로 개발 시작
 - GFS, MapReduce 기술 등장
-- Apache 오픈소스 파운데이션 위에 GFS,MapReduce 기술을 끌어와 소프트 프레임워크를 만들었습니다. 그것이 하둡.
+- Apache 오픈소스 파운데이션 위에 GFS,MapReduce 기술을 끌어와 소프트 프레임워크를 만들었습니다. 그것이 하둡 기본 모델입니다.
 
 **용어 정리**
 - 분산 처리 시스템: 여러개의 머신과 하나의 작업 사이 MPI를 사용하는 시스템
@@ -61,7 +83,7 @@
 ### 2. MapReduce 
 - 정의: 대용량 데이터를 처리하는 분산 프로그래밍 모델 프레임워크
 - 역할: computation
-    - HDFS가 분산 저장이였다면 **MapReduce는 분산 처리** 기능을 합니다.
+    - **HDFS가 분산 저장** 이였다면 **MapReduce는 분산 처리** 기능을 합니다.
     - 대규모 분산 컴퓨팅 환경에서 데이터를 병렬 분석이 가능합니다.
     - 프로그래머가 직접 작성하는 맵과 리듀스 라는 두개의 메소드로 구성됩니다.
     - 맵리듀스 프레임워크는 Map + Reduce 두 가지 형식으로 나누어 집니다.
@@ -71,14 +93,14 @@
 - 설명
 
 --
-
-**아래 사이트의 내용을 참고하여 작성된 글 입니다.**
+아래 사이트의 내용을 참고하여 작성된 글 입니다.
+- [에코시스템1](https://m.blog.naver.com/PostView.nhn?blogId=acornedu&logNo=220957220179&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+- [에코시스템2](https://12bme.tistory.com/70?category=737765)
+- [에코시스템3](https://over153cm.tistory.com/entry/%ED%95%98%EB%91%A1-%EC%97%90%EC%BD%94%EC%8B%9C%EC%8A%A4%ED%85%9CHadoopEcosystem%EC%9D%B4%EB%9E%80)
 - https://www.opentutorials.org/course/2908/17055
-- https://m.blog.naver.com/PostView.nhn?blogId=acornedu&logNo=220957220179&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 - https://blog.acronym.co.kr/329
 - https://12bme.tistory.com/70
 - http://www.incodom.kr/%ED%95%98%EB%91%A1
-- https://12bme.tistory.com/71?category=737765
 - https://insightcampus.co.kr/hadoop01/
 - https://eehoeskrap.tistory.com/219
 - http://www.openwith.net/?p=597
