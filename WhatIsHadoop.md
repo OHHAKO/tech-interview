@@ -13,7 +13,7 @@
 4. Scalable(확장성): 저장할 용량이 늘어나면 컴퓨터 추가 
 
 ### 하둡 내부 구성 및 설명
-<img src="./imgs/HadoopEcoSystem.png" width=400px height=400px />
+<img src="./imgs/HadoopEcoSystem.png" width=500px height=400px />
 하둡은 단일 서버에서 수천대의 머신으로 확장 할 수 있도록 설계되어 있습니다. <br>
 중앙 시스템(하둡)에 활용성을 높이기 위해 여러가지 소프트웨어를 추가한 모델을 '에코시스템'이라 부릅니다. <br>
 하둡 초기 모델은 HDFS, MapReduce를 포함한 프레임워크로 시작했으나 <br>
@@ -89,10 +89,9 @@
     - 맵리듀스 프레임워크는 Map + Reduce 두 가지 형식으로 나누어 집니다.
     - Map(key,value 형태) 함수에서 데이터를 처리합니다. 정확히 말하면 흩어져 있는 데이터를 연관성 있는 데이터들로 분류하는 작업입니다.  (분산처리 과정)
     - Reduce 함수에서 결과값을 계산합니다. 더 정확히 말하면 Map에서 출력된 데이터에서 중복을 제거하고 원하는 데이터를 추춣합니다. (합치는 과정)
-- 아키텍처 사진 첨부 
-- 설명
 
---
+
+---
 아래 사이트의 내용을 참고하여 작성된 글 입니다.
 - [에코시스템1](https://m.blog.naver.com/PostView.nhn?blogId=acornedu&logNo=220957220179&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 - [에코시스템2](https://12bme.tistory.com/70?category=737765)
