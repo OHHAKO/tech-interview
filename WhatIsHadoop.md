@@ -13,7 +13,7 @@
 4. Scalable(확장성): 저장할 용량이 늘어나면 컴퓨터 추가 
 
 ### 하둡 내부 구성 및 설명
-<img src="./imgs/HadoopEcoSystem.png" width=500px height=400px />
+<img src="./imgs/HadoopEcoSystem.png" width=550px height=400px />
 하둡은 단일 서버에서 수천대의 머신으로 확장 할 수 있도록 설계되어 있습니다. <br>
 중앙 시스템(하둡)에 활용성을 높이기 위해 여러가지 소프트웨어를 추가한 모델을 '에코시스템'이라 부릅니다. <br>
 하둡 초기 모델은 HDFS, MapReduce를 포함한 프레임워크로 시작했으나 <br>
