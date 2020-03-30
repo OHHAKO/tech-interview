@@ -13,12 +13,13 @@
 4. Scalable(확장성): 저장할 용량이 늘어나면 컴퓨터 추가 
 
 ### 하둡 내부 구성 및 설명
-<img src="./imgs/HadoopEcoSystem.png" width=500px height=400px />
+<img src="./imgs/HadoopEcoSystem.png" width=550px height=400px />
 하둡은 단일 서버에서 수천대의 머신으로 확장 할 수 있도록 설계되어 있습니다. <br>
 중앙 시스템(하둡)에 활용성을 높이기 위해 여러가지 소프트웨어를 추가한 모델을 '에코시스템'이라 부릅니다. <br>
 하둡 초기 모델은 HDFS, MapReduce를 포함한 프레임워크로 시작했으나 <br>
 데이터저장, 처리, 실행 엔진 등을 포함하는 생태계(EcoSystem) 의미로 확장되었습니다.
 
+### 구성요소 기능
 - Distributed Coordinator: 분산처리, 분산환경 구성하는 서버 설정을 관리하는 시스템
     - Zookeeper
 - Scheduling
@@ -74,7 +75,7 @@
     - 스트리밍 방식 데이터 접근이란, 파일을 순차적 스트리밍 방식으로 읽습니다.
     - 한번 저장된 데이터는 수정할 수 없으며 읽기만 가능합니다. (데이터 무결성)
     - 수정은 불가능 하지만 파일이동, 삭제, 복사 하는 인터페이스를 제공합니다.
-- ![IMG LOAD FAIL](./imgs/HDFS구조.JPG)
+![IMG LOAD FAIL](./imgs/HDFS구조.JPG)
 - DataNode는 여러 파일 블록을 저장하고 있다.
 - NameNode는 HDFS의 Master역할을 한다. 
     - 파일 시스템의 모든 meta Data를 갖고있다. 즉 클러스터 리소스 관리
