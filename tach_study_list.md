@@ -1,4 +1,7 @@
-## 내가 노리는 것 => java 개발자, 웹 백엔드 개발자(spring), angular(ts,js), nodejs, rest api, 오픈소스 이정도.
+### 공부하기 전
+
+내가 원하는 타이틀 => 웹 개발자 <br>
+내가 원하는 기술스택 => java, angular, nodejs, spring, rest api, open source, cloud service
 
 - 자료구조
 
@@ -50,6 +53,7 @@
   - nodejs
   - rest api
   - 오픈소스
+  - 분산처리
 
 * 데이터베이스
   - 쿼리 속도 및 효율 향상법
@@ -70,12 +74,8 @@
 * 수업 경험
   - 재밌거나 인상깊었던 수업
 
-## 잊지말아야 할 것
+#### 잊지말아야 할 것
 
 - 기본이론은 착실히 갖추자.
 - 알고리즘은 시간 복잡도 및 효율을 고려하라
 - 과장하지 마라. 솔직과 정직이 최고의 미덕이다.
-
----
-
-- https://edykim.com/ko/post/advice-on-learning-algorithms/
