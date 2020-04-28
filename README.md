@@ -1,7 +1,7 @@
 # tech interview 준비
 
-내가 원하는 title => **웹 개발자** <br>
-내가 원하는 tech stack => **java, angular, nodejs, spring, rest api, open source, cloud service**
+내가 원하는 title:**웹 개발자** <br>
+개발하고 싶은 tech stack: **java, angular, nodejs, spring, rest api, open source, cloud service**
 
 - 자료구조
 
@@ -79,3 +79,9 @@
   - 고난과 역경 그리고 극복과 해결 (사례 포함)
 * 수업 경험
   - 재밌거나 인상깊었던 수업
+
+#### 잊지말아야 할 것
+
+- 기본이론은 착실히 갖추자.
+- 알고리즘은 시간 복잡도 및 효율을 고려하라
+- 과장하지 마라. 솔직과 정직이 최고의 미덕이다.
